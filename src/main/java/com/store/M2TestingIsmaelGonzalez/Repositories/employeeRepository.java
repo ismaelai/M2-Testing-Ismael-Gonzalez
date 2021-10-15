@@ -8,8 +8,9 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface EmployeeRepository extends JpaRepository <Employee, Long>{
+public interface employeeRepository extends JpaRepository <Employee, Long>{
 
-    List<Employee> findByEmployee(String employee);
+    //List<Employee> findByEmployee(String employee);
 
+    List<Employee> findByFirstName(String firstName);
 }
